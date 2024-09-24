@@ -1,0 +1,4 @@
+20 st rullade tarningar
+ [5, 6, 3, 1, 5, 4, 3, 1, 4, 2, 3, 6, 5, 3, 2, 3, 4, 1, 2, 5]
+Sorterade tarningar:
+ 

@@ -1,0 +1,40 @@
+Antal rullningar: 10
+Antalet Ones: 5. Probabilty: 0.50
+Antalet Twos: 2. Probabilty: 0.20
+Antalet Thress: 0. Probabilty: 0.00
+Antalet Fours: 2. Probabilty: 0.20
+Antalet Fives: 1. Probabilty: 0.10
+Antalet Sixes: 0. Probabilty: 0.00
+
+Antal rullningar: 100
+Antalet Ones: 18. Probabilty: 0.18
+Antalet Twos: 18. Probabilty: 0.18
+Antalet Thress: 17. Probabilty: 0.17
+Antalet Fours: 13. Probabilty: 0.13
+Antalet Fives: 16. Probabilty: 0.16
+Antalet Sixes: 18. Probabilty: 0.18
+
+Antal rullningar: 1000
+Antalet Ones: 140. Probabilty: 0.14
+Antalet Twos: 198. Probabilty: 0.20
+Antalet Thress: 168. Probabilty: 0.17
+Antalet Fours: 160. Probabilty: 0.16
+Antalet Fives: 164. Probabilty: 0.16
+Antalet Sixes: 170. Probabilty: 0.17
+
+Antal rullningar: 10000
+Antalet Ones: 1597. Probabilty: 0.16
+Antalet Twos: 1716. Probabilty: 0.17
+Antalet Thress: 1622. Probabilty: 0.16
+Antalet Fours: 1734. Probabilty: 0.17
+Antalet Fives: 1606. Probabilty: 0.16
+Antalet Sixes: 1725. Probabilty: 0.17
+
+Antal rullningar: 100000
+Antalet Ones: 16760. Probabilty: 0.17
+Antalet Twos: 16779. Probabilty: 0.17
+Antalet Thress: 16655. Probabilty: 0.17
+Antalet Fours: 16720. Probabilty: 0.17
+Antalet Fives: 16594. Probabilty: 0.17
+Antalet Sixes: 16492. Probabilty: 0.16
+

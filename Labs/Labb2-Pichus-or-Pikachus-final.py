@@ -118,21 +118,23 @@ average_accuracy = sum(accuracy_resluts)/10
 points_1 = [pokemon[:2] for pokemon in clean_data if pokemon[2] == 1]
 points_0 = [pokemon[:2] for pokemon in clean_data if pokemon[2] == 0]
 
-x = range(1, 11)
+nr_loops = range(1, 11)
 
-# Plot for training data and accuracy
-fig, ax = plt.subplots(2, 1, dpi=150, figsize=(10, 10))
+# Plot for training data, user point and accuracy
+fig, ax = plt.subplots(2, 1, dpi=150, figsize=(7, 7))
+plt.subplots_adjust(hspace=0.6)
 
 ax[0].scatter(*zip(*points_0), label= "Pichu")
 ax[0].scatter(*zip(*points_1), label= "Pickachus")
+ax[0].scatter(x, y, label="User point")
 ax[0].set_title("Träningspukter för Pichus och Pikachu")
 ax[0].set_xlabel("Bredd")
 ax[0].set_ylabel("Längd")
 ax[0].legend()
 
 
-ax[1].plot(x, accuracy_resluts)
-ax[1].set_title("Träffsäkerhet")
+ax[1].plot(nr_loops, accuracy_resluts)
+ax[1].set_title(f"Träffsäkerheten. Där medelträffsäkerheten är: {average_accuracy:.3f}")
 ax[1].set_xlabel("Antal kalkyleringar")
 ax[1].set_ylabel("Procent")
 

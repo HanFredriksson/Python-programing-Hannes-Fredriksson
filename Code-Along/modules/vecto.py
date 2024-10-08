@@ -45,8 +45,11 @@ class Vector:
         return len(self._numbers)
 
     def validate_vector(self, other):
-        if not isinstance(other, Vector) or  len(self) != len(other):
+        if not isinstance(other, Vector):
             raise ValueError(f"{other} is not valid")
+        
+        if len(self) != len(other):
+            raise TypeError(f"{len(other)} != {len(self)}")
         return True
 
     def __abs__(self):
@@ -60,6 +63,14 @@ class Vector:
     def __getitem__(self, index):
         return self.numbers[index]
 
+    def __eg__(self, other):
+        if not self.validate_vector(other):
+            return False
+        
+        for v1, v2 in zip(self.numbers, other.numbers):
+            if v1 != v2:
+                return False
+        return True
 
     def plot(self, *others):
         x, y = [], []
@@ -88,5 +99,5 @@ if __name__ == '__main__': #Detta är på global nivå
     VARIABEL = 0 # Variabler skrivs alltid med stora bokstäver
     print("Nu är vi vector modulen")
 
-else: # Gör inte så här!!! Bygg ine in funktinalitet
-    print(f"Hej, från vector modulen" {globals()['Vector']})
+#else: # Gör inte så här!!! Bygg ine in funktinalitet
+    #print(f"Hej, från vector modulen"{globals()['Vector']})

@@ -3,7 +3,7 @@ import numpy as np
 
 
 class LineClassifier:
-    def __init__(self, data, k=-1.83, m=0.234):
+    def __init__(self, data, k=-1.83, m=0.234): # Defult is my picked decicion boundary
         self.k = k
         self.m = m
         self.unlabled_data = data
@@ -11,7 +11,7 @@ class LineClassifier:
     
 
     def classifier(self):
-        # Classifies after wich formula given for the boundary line, y > or < kx + m
+        # Classifies after wich formula given for the decicion boundary, y > or < kx + m
         for x, y in self.unlabled_data:
             if y > self.k * x + self.m:
                 self.labled_data.append((x, y, 1))
